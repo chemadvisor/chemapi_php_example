@@ -9,8 +9,8 @@
 // set base address
 $baseAddress = "https://sandbox.chemadvisor.io/chem/rest/v2/";
 
-// set api
-$api = "lists";
+// set resource
+$api = "regulatory_lists";
 
 // set query parameters:q,limit,offset
 $q      = '{"tags.tag.name":"Government Inventory Lists"}';
