@@ -10,7 +10,7 @@
 $baseAddress = "https://sandbox.chemadvisor.io/chem/rest/v2/";
 
 // set resource
-$api = "regulatory_lists";
+$resource = "regulatory_lists";
 
 // set query parameters:q,limit,offset
 $q      = '{"tags.tag.name":"Government Inventory Lists"}';
@@ -37,6 +37,6 @@ $opts = array(
 );
 
 $context = stream_context_create($opts);
-$file = file_get_contents($baseAddress . $api . '?' . $getdata, false, $context);
+$file = file_get_contents($baseAddress . $resource . '?' . $getdata, false, $context);
 print_r($file);
 ?>
